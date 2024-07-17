@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <h1 id="titulo"></h1>
+    </header>
+        <div id="seccion">
+            <form id="formulario">
+                <div class="contenedor-peso">
+                    <label id="peso">Peso en <strong>kilogramos</strong></label>
+                    <input type="text" id="inputPeso" placeholder="Ingrese peso">
+                </div>
+                <div class="contenedor-altura">
+                    <label id="Altura">Altura en <strong>centimetros</strong></label>
+                    <input type="text" id="inputAltura" placeholder="Ingrese altura">
+                </div>
+                <button type="submit" id="boton"></button>
+            </form>
+        </div>
+        <div id="resultadoIMC" class="resultado-oculto"></div>
+        <div id="historial"></div>
+
+        <script type="module" src="../js/index.js"></script>
+</body>
+</html>
