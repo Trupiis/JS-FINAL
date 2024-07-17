@@ -1,0 +1,93 @@
+.body-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #22c1c3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdbb2d, #22c1c3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.form-login {
+    background-color: #ededed10;
+    backdrop-filter: blur(100px);
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    
+
+    h1 {
+        margin-top: 30px;
+    }
+
+    .formulario {
+        .usuario {
+            margin-bottom: 30px;
+            margin-top: 30px;
+
+            .input-usuario {
+                border-radius: 10px;
+                padding: 10px;
+                border: none;
+                outline: none;
+            }
+
+            .input-usuario::placeholder {
+                text-align: center;
+            }
+        }
+
+        .contraseña {
+            margin-bottom: 30px;
+
+            .input-contraseña {
+                border-radius: 10px;
+                padding: 10px;
+                border: none;
+                outline: none;
+
+            }
+
+            .input-contraseña::placeholder {
+                text-align: center;
+            }
+        }
+
+        .boton-login {
+            background-image: linear-gradient(to right, #F4D03F  30%, #16A085  100%);
+            width: 70%;
+            border-radius: 10px;
+            height: 30px;
+            border: none;
+        }
+
+        .boton-login:hover{
+            border: 1px solid black;
+        }
+
+        .adicionales {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px;
+            font-size: 12px;
+
+            label {
+                display: flex;
+
+                .lembra {
+                    margin-left: 10px;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}

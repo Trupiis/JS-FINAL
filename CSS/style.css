@@ -1,0 +1,217 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "sora", sans-serif;
+}
+
+.body-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #22c1c3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fdbb2d, #22c1c3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdbb2d, #22c1c3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.form-login {
+  background-color: rgba(237, 237, 237, 0.062745098);
+  backdrop-filter: blur(100px);
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+}
+.form-login h1 {
+  margin-top: 30px;
+}
+.form-login .formulario .usuario {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.form-login .formulario .usuario .input-usuario {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.form-login .formulario .usuario .input-usuario::placeholder {
+  text-align: center;
+}
+.form-login .formulario .contraseña {
+  margin-bottom: 30px;
+}
+.form-login .formulario .contraseña .input-contraseña {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.form-login .formulario .contraseña .input-contraseña::placeholder {
+  text-align: center;
+}
+.form-login .formulario .boton-login {
+  background-image: linear-gradient(to right, #F4D03F 30%, #16A085 100%);
+  width: 70%;
+  border-radius: 10px;
+  height: 30px;
+  border: none;
+}
+.form-login .formulario .boton-login:hover {
+  border: 1px solid black;
+}
+.form-login .formulario .adicionales {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  font-size: 12px;
+}
+.form-login .formulario .adicionales label {
+  display: flex;
+}
+.form-login .formulario .adicionales label .lembra {
+  margin-left: 10px;
+}
+.form-login .formulario .adicionales a {
+  text-decoration: none;
+  color: black;
+}
+
+.titulo {
+  font-size: 35px;
+  text-shadow: 5px 10px 10px black;
+  color: #fff;
+  font-weight: 300;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85px;
+  background: #ED213A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #93291E, #ED213A);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #93291E, #ED213A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 0 0 40px black;
+  margin-bottom: 50px;
+}
+
+.seccion {
+  background: #ED213A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #93291E, #ED213A);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #93291E, #ED213A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 350px;
+  width: 450px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 30px 30px 0 30px;
+  box-shadow: 0 0 10px black;
+  margin-bottom: 10px;
+}
+
+.form {
+  width: 100%;
+}
+
+.contenedor-peso,
+.contenedor-altura {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  font-size: 30px;
+  margin-top: 30px;
+  color: #fff;
+}
+
+#peso {
+  margin-bottom: 20px;
+}
+
+#inputPeso {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#inputPeso::placeholder {
+  text-align: center;
+}
+
+#Altura {
+  margin-bottom: 20px;
+}
+
+#inputAltura {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#inputAltura::placeholder {
+  text-align: center;
+}
+
+#boton {
+  display: flex;
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.resultado-oculto {
+  display: none;
+}
+
+.resultado-visible {
+  background-color: rgb(54, 51, 51);
+  height: 170px;
+  width: 450px;
+  margin: 0 auto;
+  border-radius: 30px 0 30px 0px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  animation-duration: 5s;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.results {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#historial {
+  height: 70px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  border-radius: 0px 30px 30px 30px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
