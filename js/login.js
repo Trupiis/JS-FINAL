@@ -15,7 +15,7 @@ boton.addEventListener('click', (e) => {
 
     if (usuario && contraseña) {
         sessionStorage.setItem('UserCuenta', enJSON);
-        window.location.href = '../pages/inicio.html';
+        window.location.href = './pages/inicio.html';
     }
         else {
             alert('Por favor, ingrese usuario y contraseña.');
