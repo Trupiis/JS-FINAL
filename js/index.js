@@ -69,15 +69,21 @@ document.getElementById('formulario').addEventListener('submit', function (event
         }
 
         //IMPLEMENTACION DE TERNARIOS.
-        explicacion.textContent =
+        
+            //USO DE FETCH
+            fetch('../data/datos.json')
+                .then (response => response.json())
+                .then (data => showInfo(data));
+                
+            function showInfo(data){
+                explicacion.textContent =
             (IMC <= 18.5) ? `La recomendación es ${bajoPeso.recomendacion}` :
             (IMC > 18.5 && IMC <= 24.9) ? `Está en un buen peso, ${buenPeso.recomendacion}` :
             (IMC > 24.9 && IMC <= 29.9) ? `${sobrePeso.recomendacion}` :
             (IMC > 29.9 && IMC <= 39.9) ? `Es escencial ${Obeso.recomendacion}` :
             (IMC > 39.9 && IMC <= 150) ? `${obesidadExtrema.recomendacion}` : '';
-
-            //USO DE FETCH
+            }
+            
     }
 });
-import {bajoPeso, buenPeso, sobrePeso, Obeso, obesidadExtrema } from './objects.js';
 
